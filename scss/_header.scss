@@ -1,0 +1,283 @@
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1950px;
+    padding: 0 1.5%;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: url(pictures/header/football.png);
+    background-color: #101532;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    &-main{
+        display: flex;
+        justify-content: space-between;
+        padding: 55px 195px 0 195px;
+        margin: 0 0 310px 0;
+    }
+    &__logo{
+        background-image: url(pictures/header/logo.png);
+        background-repeat: no-repeat;
+        height: 33px;
+        width: 189px;
+    }
+    &__link{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "Proxima Nova";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 34px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+    }
+    &__title{
+        font-family: "Proxima Nova";
+        color: #ffffff;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 31px;
+        text-transform: uppercase;
+        letter-spacing: 5px;    
+        padding: 0 0 0 195px;
+        margin: 0 0 60px 0;
+        position: relative;
+        z-index: 1;
+        &::before{
+            content: url(pictures/header/line1.png);
+            width: 254px;
+            height: 317px;
+            top: -120px;
+            left: 29%;
+            position: absolute;
+            z-index: -1;
+
+        }
+    }
+    &__title2{
+        font-family: "Proxima Nova";
+        color: #ffffff;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 31px;
+        text-transform: uppercase;
+        letter-spacing: 5px;    
+        margin: 0 0 60px 0;
+        text-align: right;
+        padding: 0 195px 0 0;
+        
+    }
+    &__ul{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 195px 0 0;
+        margin: 0 0 180px 0;
+    }
+    &__li{
+        list-style-type: none;
+    }
+    &__links{
+        text-decoration: none;
+        color: #9071ea;
+        font-family: "Proxima Nova";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 34px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        margin: 0 0 0 50px;
+    }
+    &__buttons{
+        display: flex;
+        justify-content: center;
+        padding: 0 0 110px 0;
+     
+    }
+}
+.button{
+    &__app{
+        background-image: url(pictures/header/Apple.png);
+        padding: 0 65px 0 105px;
+        background-position: 45px center;
+        margin: 0 50px 0 0
+    }
+    &__google{
+        background-image: url(pictures/header/Google_Play.png);
+        padding: 0 85px 0 125px;
+        background-position: 65px center;
+    }
+    width: 311px;
+    height: 77px;
+    background-color: #5e42b0;
+    box-shadow: 0 16px 24px #0a0e34;
+    border: none;
+    border-radius: 40px;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    background-repeat: no-repeat;
+    text-align: left;
+}
+.button:hover{
+    cursor: pointer;
+}
+@media (max-width: 1919px){
+    .container{
+        width: auto;
+    }
+    .header-main{
+        padding: 55px 100px 0 100px;
+        margin: 0 0 195px 0;
+
+    }
+    .header__title{
+        font-size: 75px;
+        letter-spacing: 4px;   
+        padding: 0 0 0 100px;
+        margin: 0 0 25px 0; 
+    }
+    .header__title2{
+        padding: 0 100px 0 0;
+        line-height:75px;
+    }
+    .header__ul{
+        padding: 0 90px 0 0;
+    }
+}
+@media (max-width: 1100px){
+    .header{
+        &-main{
+            padding: 50px 20px 0 20px;
+        }
+        &__title{
+            font-size: 64px;
+            letter-spacing: 4px;   
+            padding: 0 0 0 90px;
+            margin: 0 0 25px 0; 
+            &::before{
+                top: -70px;
+                left: 25%;
+            }
+        }
+        &__title2{
+            font-size: 64px;
+            letter-spacing: 4px; 
+            margin: 0 0 185px 0;
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            text-align: left;
+            padding: 0 0 0 350px;
+        }
+        &__ul{
+            padding: 0;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0 0 115px 0;
+        }
+        &__links{
+            margin: 0;
+        }
+        &__buttons{
+            padding: 0 0 90px 0;
+        }
+    }
+    .button{
+        &__app{
+            margin: 0 30px 0 0;
+        }
+        box-shadow: 8px 14px 24px #0a0e34;
+    }
+}
+@media (max-width: 900px){
+    .header{
+        &__title2{
+            padding: 0 0 0 250px;
+
+        }
+    }
+
+}
+@media (max-width: 767px){
+    .header{
+        min-width: 320px;
+        &-main{
+            padding: 40px 0 0 0;
+            margin: 0 0 140px 0;
+        }
+        &__logo{
+            margin: 0 auto;
+        }
+        &__link{
+            display: none;
+        }
+        &__title{
+            padding: 0;
+            font-size: 32px;
+            letter-spacing: 2px;
+            margin: 0 0 25px 6%;
+            &::before{
+                content: url(pictures/header/line2.png);
+                width: 200px;
+                height: 317px;
+                top: -20px;
+                left: 25%;
+                position: absolute;
+            }
+        }
+        &__title2{
+            margin: 0 0 120px 23%;
+            font-size: 32px;
+            letter-spacing: 1px;
+            padding-right:0; 
+            text-align: left;
+            line-height: 50px;
+            padding: 0;
+        }
+        &__ul{
+            margin: 0 0 20px 0; 
+            padding: 0 35px;
+        }
+        &__links{
+            font-size: 12px;
+            margin: 0;
+        }
+        &__butons{
+            padding: 0 0 45px 0 ;
+        }
+    }
+    .button{
+        width: 142px;
+        height: 39px;
+        box-shadow: 0 10px 16px #0a0e34;
+        font-size: 8px;
+        letter-spacing: 0;
+        &__app{
+            padding: 0 15px 0 45px;
+            background-image: url(pictures/header/Apple2.png);
+            background-position: 20px center;
+            margin: 0 10px 0 0;
+        }
+        &__google{
+            padding: 0 30px 0 55px;
+            background-image: url(pictures/header/Google_Play2.png);
+            background-position: 30px center;
+        }
+    }
+    .header__mobile{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+

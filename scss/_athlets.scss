@@ -1,0 +1,97 @@
+.athlets, .fotorama{
+    &__title{
+        margin: 110px 0 90px 50%;
+    }
+    &__subtitle{
+        margin: 0 0 30px 50%;
+    }
+    &__text{
+        margin: 0 0 0 50%;
+    }
+}
+.container_football{
+    position: relative;
+}
+.grey{
+    background-color: #f5f4fa;
+    padding: 60px 0;
+    margin: 60px 0 0 0;
+
+}
+
+.footballer{
+    background-image: url(pictures/athlets/footballer.png), url(pictures/athlets/4-layers.png);
+    width: 725px;
+    height: 1105px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    z-index: 1;
+}
+.blue{
+    background-color: #5e42b0;
+    padding: 90px 0;
+
+}
+.fotorama{
+    display: none;
+}
+@media(max-width:1100px){
+    .athlets__text{
+        padding: 0 55px 0 0;
+    }
+    .footballer{
+        right: 40%;
+    }
+}
+@media(max-width: 767px){
+    .athlets__subtitle, .athlets__text, .grey, .blue{
+        display: none;
+    }
+    .container_football{
+        min-width: 320px;
+    }
+    .fotorama{
+        display:block;
+        &__subtitle{
+            margin: 0;
+            text-align: center;
+        }
+        &__text{
+            margin: 0 auto;
+            text-align: left;
+        }
+        &__grey{
+            background-color: #f5f4f9;
+        }
+        &__blue{
+            background-color: #5e42b0;
+        }
+        &__arr{
+            display: none !important;
+        }
+        &__nav-wrap{
+            margin: -30px 0 0 0;
+        } 
+    }
+    .footballer{
+        width: 192px;
+        height: 281px;
+        background-size: cover;
+        background-image: url(pictures/athlets/footballer.png), url(pictures/athlets/3-layers.png);
+        position: unset;
+        margin: 0 auto;
+
+    }
+    .athlets{
+        &__title{
+        font-size: 50px;
+        margin: 25px 0 20px 20px;
+        }
+    }
+    .fotorama_mod{
+        padding: 80px 0 100% 0;
+    }
+    
+}

@@ -1,0 +1,85 @@
+.work{
+    &__picture{
+        background-image: url(pictures/works/work.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 50%;
+        height: 730px;
+        position: relative;
+    }
+}
+.work_container{
+    display: flex;
+    padding: 0;
+}
+.work{
+    &__title{
+        margin: 255px 0 120px 100px;
+    }
+    &__text{
+        max-width: 320px;
+        margin: 0 0 0 100px;
+        &::after{
+            content: "";
+            display: block;
+            bottom: 0;
+            height: 5px;
+            width: 22px;
+            background-color: #5e42b0;
+            margin: 85px 0 0 0;
+        }
+    }
+    
+}
+@media(max-width: 1100px){
+    .work{
+        &_container{
+            flex-direction: column;
+            margin: 0 0 65px 0;
+        }
+        &__picture{
+            width: 100%;
+        }
+        &__title {
+            margin: 0 0 35px 35px;
+        }
+        &__text{
+            margin: 0 0 0 35px;
+        }
+    }
+    .works{
+        &__text{
+            margin: 85px 0 0 0;
+        }
+
+    }
+}
+@media(max-width:767px){
+    .work_container{
+        min-width: 320px;
+    }
+    .work{
+        &__picture{
+            height: 320px;
+        }
+        &__title{
+            font-size: 28px;
+            margin: 0 0 0 20px;
+        }
+        &__text{
+            font-size: 16px;
+            max-width: 350px;
+            margin: 0 0 0 20px;
+        }
+        &__text::after{
+            margin: 25px 0 0 0;
+        }
+    }
+    .works{
+        &__text{
+            margin: 35px 0 0 0;
+        }
+
+    }
+}

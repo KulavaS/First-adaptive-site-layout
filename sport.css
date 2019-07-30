@@ -1,0 +1,790 @@
+.titles {
+  color: #e7e7e7;
+  font-family: "Proxima Nova";
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase; }
+
+.subtitles {
+  color: #c1c1c1;
+  font-family: "Proxima Nova";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+  .subtitles::before {
+    content: "01";
+    color: #000000;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #5e42b0;
+    vertical-align: super;
+    margin-right: 10px; }
+  .subtitles_grey::before {
+    content: "02"; }
+  .subtitles_blue::before {
+    content: "03";
+    border-bottom: 4px solid #efefef; }
+
+.texts {
+  color: #000000;
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  max-width: 700px; }
+
+.fotorama__dot {
+  width: 6px;
+  height: 6px;
+  border: 0px solid #5c3caf;
+  background-color: #d8d8d8; }
+
+.rect {
+  background-color: #5e42b0;
+  width: 168px;
+  height: 155px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 28%;
+  right: -84px; }
+
+.num {
+  color: #f5f6f7;
+  font-family: "Proxima Nova";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  border-bottom: 5px solid #ffffff; }
+
+body {
+  margin: 0;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1950px;
+  padding: 0 1.5%;
+  margin: 0 auto; }
+
+.header {
+  background-image: url(pictures/header/football.png);
+  background-color: #101532;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply; }
+  .header-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 195px 0 195px;
+    margin: 0 0 310px 0; }
+  .header__logo {
+    background-image: url(pictures/header/logo.png);
+    background-repeat: no-repeat;
+    height: 33px;
+    width: 189px; }
+  .header__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 34px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px; }
+  .header__title {
+    font-family: "Proxima Nova";
+    color: #ffffff;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 31px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 0 0 0 195px;
+    margin: 0 0 60px 0;
+    position: relative;
+    z-index: 1; }
+    .header__title::before {
+      content: url(pictures/header/line1.png);
+      width: 254px;
+      height: 317px;
+      top: -120px;
+      left: 29%;
+      position: absolute;
+      z-index: -1; }
+  .header__title2 {
+    font-family: "Proxima Nova";
+    color: #ffffff;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 31px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0 0 60px 0;
+    text-align: right;
+    padding: 0 195px 0 0; }
+  .header__ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 195px 0 0;
+    margin: 0 0 180px 0; }
+  .header__li {
+    list-style-type: none; }
+  .header__links {
+    text-decoration: none;
+    color: #9071ea;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 34px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin: 0 0 0 50px; }
+  .header__buttons {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 110px 0; }
+
+.button {
+  width: 311px;
+  height: 77px;
+  background-color: #5e42b0;
+  box-shadow: 0 16px 24px #0a0e34;
+  border: none;
+  border-radius: 40px;
+  color: #ffffff;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  background-repeat: no-repeat;
+  text-align: left; }
+  .button__app {
+    background-image: url(pictures/header/Apple.png);
+    padding: 0 65px 0 105px;
+    background-position: 45px center;
+    margin: 0 50px 0 0; }
+  .button__google {
+    background-image: url(pictures/header/Google_Play.png);
+    padding: 0 85px 0 125px;
+    background-position: 65px center; }
+
+.button:hover {
+  cursor: pointer; }
+
+@media (max-width: 1919px) {
+  .container {
+    width: auto; }
+
+  .header-main {
+    padding: 55px 100px 0 100px;
+    margin: 0 0 195px 0; }
+
+  .header__title {
+    font-size: 75px;
+    letter-spacing: 4px;
+    padding: 0 0 0 100px;
+    margin: 0 0 25px 0; }
+
+  .header__title2 {
+    padding: 0 100px 0 0;
+    line-height: 75px; }
+
+  .header__ul {
+    padding: 0 90px 0 0; } }
+@media (max-width: 1100px) {
+  .header-main {
+    padding: 50px 20px 0 20px; }
+  .header__title {
+    font-size: 64px;
+    letter-spacing: 4px;
+    padding: 0 0 0 90px;
+    margin: 0 0 25px 0; }
+    .header__title::before {
+      top: -70px;
+      left: 25%; }
+  .header__title2 {
+    font-size: 64px;
+    letter-spacing: 4px;
+    margin: 0 0 185px 0;
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    text-align: left;
+    padding: 0 0 0 350px; }
+  .header__ul {
+    padding: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 0 115px 0; }
+  .header__links {
+    margin: 0; }
+  .header__buttons {
+    padding: 0 0 90px 0; }
+
+  .button {
+    box-shadow: 8px 14px 24px #0a0e34; }
+    .button__app {
+      margin: 0 30px 0 0; } }
+@media (max-width: 900px) {
+  .header__title2 {
+    padding: 0 0 0 250px; } }
+@media (max-width: 767px) {
+  .header {
+    min-width: 320px; }
+    .header-main {
+      padding: 40px 0 0 0;
+      margin: 0 0 140px 0; }
+    .header__logo {
+      margin: 0 auto; }
+    .header__link {
+      display: none; }
+    .header__title {
+      padding: 0;
+      font-size: 32px;
+      letter-spacing: 2px;
+      margin: 0 0 25px 6%; }
+      .header__title::before {
+        content: url(pictures/header/line2.png);
+        width: 200px;
+        height: 317px;
+        top: -20px;
+        left: 25%;
+        position: absolute; }
+    .header__title2 {
+      margin: 0 0 120px 23%;
+      font-size: 32px;
+      letter-spacing: 1px;
+      padding-right: 0;
+      text-align: left;
+      line-height: 50px;
+      padding: 0; }
+    .header__ul {
+      margin: 0 0 20px 0;
+      padding: 0 35px; }
+    .header__links {
+      font-size: 12px;
+      margin: 0; }
+    .header__butons {
+      padding: 0 0 45px 0; }
+
+  .button {
+    width: 142px;
+    height: 39px;
+    box-shadow: 0 10px 16px #0a0e34;
+    font-size: 8px;
+    letter-spacing: 0; }
+    .button__app {
+      padding: 0 15px 0 45px;
+      background-image: url(pictures/header/Apple2.png);
+      background-position: 20px center;
+      margin: 0 10px 0 0; }
+    .button__google {
+      padding: 0 30px 0 55px;
+      background-image: url(pictures/header/Google_Play2.png);
+      background-position: 30px center; }
+
+  .header__mobile {
+    display: flex;
+    flex-direction: column-reverse; } }
+.athlets__title, .fotorama__title {
+  margin: 110px 0 90px 50%; }
+.athlets__subtitle, .fotorama__subtitle {
+  margin: 0 0 30px 50%; }
+.athlets__text, .fotorama__text {
+  margin: 0 0 0 50%; }
+
+.container_football {
+  position: relative; }
+
+.grey {
+  background-color: #f5f4fa;
+  padding: 60px 0;
+  margin: 60px 0 0 0; }
+
+.footballer {
+  background-image: url(pictures/athlets/footballer.png), url(pictures/athlets/4-layers.png);
+  width: 725px;
+  height: 1105px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  z-index: 1; }
+
+.blue {
+  background-color: #5e42b0;
+  padding: 90px 0; }
+
+.fotorama {
+  display: none; }
+
+@media (max-width: 1100px) {
+  .athlets__text {
+    padding: 0 55px 0 0; }
+
+  .footballer {
+    right: 40%; } }
+@media (max-width: 767px) {
+  .athlets__subtitle, .athlets__text, .grey, .blue {
+    display: none; }
+
+  .container_football {
+    min-width: 320px; }
+
+  .fotorama {
+    display: block; }
+    .fotorama__subtitle {
+      margin: 0;
+      text-align: center; }
+    .fotorama__text {
+      margin: 0 auto;
+      text-align: left; }
+    .fotorama__grey {
+      background-color: #f5f4f9; }
+    .fotorama__blue {
+      background-color: #5e42b0; }
+    .fotorama__arr {
+      display: none !important; }
+    .fotorama__nav-wrap {
+      margin: -30px 0 0 0; }
+
+  .footballer {
+    width: 192px;
+    height: 281px;
+    background-size: cover;
+    background-image: url(pictures/athlets/footballer.png), url(pictures/athlets/3-layers.png);
+    position: unset;
+    margin: 0 auto; }
+
+  .athlets__title {
+    font-size: 50px;
+    margin: 25px 0 20px 20px; }
+
+  .fotorama_mod {
+    padding: 80px 0 100% 0; } }
+.container_players {
+  position: relative; }
+
+.player {
+  background-image: url(pictures/players/player.png);
+  width: 991px;
+  height: 815px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -115px;
+  left: 40%;
+  z-index: 1; }
+  .player__title {
+    margin: 110px 0 90px 13%; }
+  .player__subtitle {
+    margin: 0 50% 30px 13%; }
+  .player__text {
+    margin: 0 50% 0 13%; }
+
+.players {
+  overflow-x: hidden; }
+
+@media (max-width: 1100px) {
+  .player {
+    left: 30%; } }
+@media (max-width: 767px) {
+  .player__subtitle, .player__text {
+    display: none; }
+
+  .player {
+    background-image: url(pictures/players/player2.png);
+    background-size: cover;
+    width: 302px;
+    height: 248px;
+    position: unset;
+    margin: 0 auto; }
+    .player__title {
+      font-size: 50px;
+      margin: 25px 0 20px 20px; }
+
+  .container_players {
+    min-width: 320px; } }
+.actives__picture {
+  background-image: url(pictures/active/active.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 730px;
+  position: relative; }
+.actives__container {
+  display: flex;
+  padding: 0; }
+.actives_rect {
+  position: absolute; }
+
+.active__title {
+  margin: 255px 0 120px 100px; }
+.active__text {
+  max-width: 320px;
+  margin: 0 0 0 100px; }
+  .active__text::after {
+    content: "";
+    display: block;
+    bottom: 0;
+    height: 5px;
+    width: 22px;
+    background-color: #5e42b0;
+    margin: 85px 0 0 0; }
+
+@media (max-width: 1100px) {
+  .actives__container {
+    flex-direction: column;
+    margin: 0 0 65px 0; }
+  .actives__picture {
+    width: 100%; }
+  .actives__text {
+    margin: 85px 0 0 0; }
+
+  .active__title {
+    margin: 0 0 35px 35px; }
+  .active__text {
+    margin: 0 0 0 35px; } }
+@media (max-width: 767px) {
+  .actives__picture {
+    height: 320px; }
+  .actives__text {
+    margin: 35px 0 0 0; }
+  .actives__container {
+    min-width: 320px; }
+
+  .active__title {
+    font-size: 28px;
+    margin: 0 0 0 20px; }
+  .active__text {
+    font-size: 16px;
+    max-width: 350px;
+    margin: 0 0 0 20px; }
+  .active__text::after {
+    margin: 25px 0 0 0; } }
+.contacts_container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0; }
+.contacts__picture {
+  background-image: url(pictures/contacts/contact.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 730px;
+  position: relative; }
+.contacts__title {
+  margin: 255px 0 110px 190px; }
+.contacts__text {
+  margin: 0 0 0 190px;
+  max-width: 385px; }
+  .contacts__text::after {
+    content: "";
+    display: block;
+    bottom: 0;
+    height: 5px;
+    width: 22px;
+    background-color: #5e42b0;
+    margin: 85px 0 0 0; }
+.contacts_rect {
+  left: -84px; }
+
+@media (max-width: 1875px) {
+  .contacts__title {
+    max-width: 250px;
+    line-height: 75px;
+    margin-left: 150px; }
+  .contacts__text {
+    margin-left: 150px; } }
+@media (max-width: 1350px) {
+  .contacts__title {
+    margin-left: 100px;
+    font-size: 85px;
+    line-height: 100px; }
+  .contacts__text {
+    margin-left: 100px; } }
+@media (max-width: 1100px) {
+  .contacts_container {
+    margin: 0 0 65px 0;
+    flex-direction: column; }
+  .contacts__picture {
+    width: 100%; }
+  .contacts__title {
+    margin: 0 0 35px 35px;
+    max-width: 700px;
+    font-size: 85px; }
+  .contacts__text {
+    margin: 0 0 0 35px; }
+
+  .contact__text {
+    margin: 85px 0 0 0; } }
+@media (max-width: 767px) {
+  .contacts__picture {
+    height: 320px; }
+  .contacts__title {
+    margin: 0 0 0 20px;
+    font-size: 28px;
+    line-height: 60px; }
+  .contacts__text {
+    font-size: 16px;
+    margin: 0 0 0 20px; }
+    .contacts__text::after {
+      margin: 25px 0 0 0; }
+  .contacts_container {
+    min-width: 320px; }
+
+  .contact__text {
+    margin: 35px 0 0 0; } }
+.work__picture {
+  background-image: url(pictures/works/work.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 730px;
+  position: relative; }
+
+.work_container {
+  display: flex;
+  padding: 0; }
+
+.work__title {
+  margin: 255px 0 120px 100px; }
+.work__text {
+  max-width: 320px;
+  margin: 0 0 0 100px; }
+  .work__text::after {
+    content: "";
+    display: block;
+    bottom: 0;
+    height: 5px;
+    width: 22px;
+    background-color: #5e42b0;
+    margin: 85px 0 0 0; }
+
+@media (max-width: 1100px) {
+  .work_container {
+    flex-direction: column;
+    margin: 0 0 65px 0; }
+  .work__picture {
+    width: 100%; }
+  .work__title {
+    margin: 0 0 35px 35px; }
+  .work__text {
+    margin: 0 0 0 35px; }
+
+  .works__text {
+    margin: 85px 0 0 0; } }
+@media (max-width: 767px) {
+  .work_container {
+    min-width: 320px; }
+
+  .work__picture {
+    height: 320px; }
+  .work__title {
+    font-size: 28px;
+    margin: 0 0 0 20px; }
+  .work__text {
+    font-size: 16px;
+    max-width: 350px;
+    margin: 0 0 0 20px; }
+  .work__text::after {
+    margin: 25px 0 0 0; }
+
+  .works__text {
+    margin: 35px 0 0 0; } }
+.footer {
+  background-image: url(pictures/footer/stadion.png);
+  background-color: #101532;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  padding: 245px 0 75px 0; }
+  .footer__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 165px 0; }
+  .footer__text {
+    position: relative;
+    z-index: 1; }
+    .footer__text::before {
+      content: url(pictures/footer/2-layers.png);
+      position: absolute;
+      z-index: -1;
+      left: 8%;
+      top: -115px; }
+  .footer__logo {
+    background-image: url(pictures/footer/footer_logo.png);
+    width: 130px;
+    height: 137px; }
+  .footer__title {
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0 0 10px 35px; }
+  .footer__subtitle {
+    color: #a496ca;
+    font-family: "Proxima Nova";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 34px;
+    text-transform: uppercase;
+    margin: 10px 0 0 35px; }
+  .footer__buttons {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 270px 0; }
+  .footer__name {
+    background-image: url(pictures/footer/suface.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 172px;
+    height: 30px; }
+  .footer__nav {
+    display: flex;
+    justify-content: space-around; }
+  .footer__icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 180px; }
+  .footer-icon {
+    height: 25px;
+    width: 25px;
+    background-size: contain;
+    display: block;
+    background-repeat: no-repeat;
+    margin: 0 30px 0 0; }
+
+.facebook {
+  background-image: url(pictures/footer/facebook.png);
+  width: 15px; }
+
+.twitter {
+  background-image: url(pictures/footer/twitter.png); }
+
+.insta {
+  background-image: url(pictures/footer/insta.png); }
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px; }
+  .link-contact {
+    border-right: 1px solid #ffffff;
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0; }
+
+@media (max-width: 1100px) {
+  .footer {
+    padding: 130px 0 35px 0; }
+    .footer__main {
+      flex-direction: column; }
+    .footer__logo {
+      margin: 0 0 80px 0; }
+    .footer__title {
+      font-size: 80px;
+      margin: 0 0 10px 0;
+      text-align: center; }
+    .footer__subtitle {
+      margin: 10px 0 0 0;
+      text-align: center; }
+    .footer__text::before {
+      content: url(pictures/footer/2-layers_767.png);
+      left: 2%;
+      top: -100px; }
+    .footer__buttons {
+      margin: 0 0 165px 0; }
+    .footer__name {
+      display: none; }
+    .footer__icons {
+      justify-content: center;
+      margin: 0 0 0 0; }
+    .footer__links {
+      display: none; }
+
+  .insta {
+    margin: 0; } }
+@media (max-width: 767px) {
+  .container {
+    min-width: 320px; }
+
+  .footer {
+    padding: 100px 0 15px 0; }
+    .footer__main {
+      margin: 0 0 70px 0; }
+    .footer__logo {
+      height: 75px;
+      width: 75px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 0 0 55px 0; }
+    .footer__text::before {
+      content: url(pictures/footer/2-layers_320.png);
+      left: 0;
+      top: -35px; }
+    .footer__title {
+      font-size: 34px;
+      letter-spacing: 2px;
+      line-height: 25px; }
+    .footer__subtitle {
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 15px; } }
+@media (max-width: 1100px) {
+  .container {
+    width: auto; }
+
+  .rect {
+    bottom: -58px;
+    top: unset;
+    right: unset;
+    left: 35px;
+    width: 116px;
+    height: 116px; } }
+@media (max-width: 767px) {
+  .container {
+    min-width: 320px; }
+
+  .subtitles {
+    font-size: 28px; }
+
+  .texts {
+    font-size: 15px;
+    max-width: 300px; }
+
+  .rect {
+    width: 70px;
+    height: 70px;
+    left: 20px;
+    bottom: -35px; }
+
+  .num {
+    font-size: 14px;
+    border-bottom: 4px solid #ffffff; } }
+
+/*# sourceMappingURL=sport.css.map */

@@ -1,0 +1,120 @@
+.contacts{
+    &_container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0;
+    }
+    &__picture{
+        background-image: url(pictures/contacts/contact.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 50%;
+        height: 730px;
+        position: relative;
+    }
+    &__title{
+        margin: 255px 0 110px 190px; 
+    }
+    &__text{
+        margin: 0 0 0 190px;
+        max-width: 385px;
+        &::after{
+            content: "";
+            display: block;
+            bottom: 0;
+            height: 5px;
+            width: 22px;
+            background-color: #5e42b0;
+            margin: 85px 0 0 0;
+        }
+    }
+    &_rect{
+        left: -84px;
+
+    }
+}
+@media(max-width:1875px){
+    .contacts{
+        &__title{
+            max-width: 250px;
+            line-height: 75px;
+            margin-left: 150px;
+        }
+        &__text{
+            margin-left: 150px;
+
+        }
+
+    }
+}
+@media(max-width:1350px){
+    .contacts{
+        &__title{
+            margin-left: 100px;
+            font-size: 85px;
+            line-height: 100px;
+
+        }
+        &__text{
+            margin-left: 100px;
+
+        }
+
+    }
+}
+@media(max-width: 1100px){
+    .contacts{
+        &_container{
+            margin:0 0 65px 0;
+            flex-direction: column;
+        }
+        &__picture{
+            width: 100%;
+        }
+        &__title{
+            margin: 0 0 35px 35px;
+            max-width: 700px;
+            font-size: 85px;
+        }
+        &__text{
+            margin: 0 0 0 35px;
+        }
+    }
+    .contact{
+        &__text{
+            margin: 85px 0 0 0;
+        }
+    }
+}
+@media(max-width:767px){
+    .contacts{
+        &__picture{
+            height: 320px;
+        }
+        &__title{
+            margin: 0 0 0 20px;
+            font-size: 28px;
+            line-height: 60px;
+
+        }
+        &__text{
+            font-size: 16px;        
+            margin: 0 0 0 20px;
+            &::after{
+                margin: 25px 0 0 0;
+            }
+        }
+        &_container{
+            min-width: 320px;
+        }
+
+    }
+    .contact{
+        &__text{
+            margin: 35px 0 0 0;
+        }
+    }
+}
+
